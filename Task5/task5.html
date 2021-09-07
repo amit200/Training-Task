@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Current Affairs </title>
+	<style>
+		body{
+			text-align:center ;
+			font-family:sans-serif;
+
+		}
+		div{
+			margin: 100px aoto;
+			width:900px ;
+		}
+		p{
+			color: #efg;
+			font-width: 300;
+			font-size: 1rem;
+			text-transform: capitalize;
+			line-height: 1.9rem;
+			margin-bottom: 3rem;
+		}
+		input{
+			min-width: 20rem;
+			border: none;
+			background: #eeeeee;
+			font-size: 1.1rem;
+			font-weight: 700;
+			padding: 1rem;
+			border-radius: 4px;
+			min-height: 3.5rem;
+			color: #212121;
+			outline: none;
+
+		}
+		button{
+			border:none ;
+			background: #8125e2;
+			color: #fff;
+			font-weight: 700;
+			padding: 1rem;
+			min-height:3.5rem ;
+			border-radius: 4px;
+			text-transform: uppercase;
+			letter-spacing: 0.15em;
+			cursor: pointer;
+			outline: none;
+
+		}
+		_getText(text, searchText) {
+    return searchText ? this._getTextWithHighlights(text, searchText) : text;
+  }
+
+	</style>
+	<script >
+    	const text=document.getElementById('text');
+    	const originalText=text.innerHTML
+    	const input=document.getElementById('input');
+    	const button=document.getElementById('button');
+
+
+
+    	function highlightWord(){
+    		if(input.value){
+    			const word=input.value.trim()
+    			const regexp=new RegExp(word,'g')
+    			text.innerHTML=originalText.replace(regexp,<mark>${word}</mark>)
+    		}
+    	}
+    	   button.addEventListener('click',highlightWord)
+
+    </script>
+</head>
+<body>
+	<div>
+		<p id="text">
+			It is without doubt, as things stand, the single greatest day of results at the Paralympic Games for India. At the 2016 Paralympics in Rio, India won a total of four medals. It was their best-ever medal haul in the history of the Games (same count as 1984, but two gold medals), taking their overall tally to 12.
+			The Stoke Mandeville Games later became the Paralympic Games which first took place in Rome, Italy, in 1960 featuring 400 athletes from 23 countries. Since then they have taken place every four years.
+		</p>
+	</div>
+    <input type="text" id="input"  placeholder="word to highlight">
+    <button id="button">highlight</button>
+    
+</body>
+</html>

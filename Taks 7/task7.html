@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel = "stylesheet" href="task7.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  type="text/javascript" src="task7.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Job Application form</title>
+    
+        
+</head>
+<body>
+   <h1  style="color: blue ;">Job Application Form</h1>
+   
+    <div class="main">
+        <table>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="alphabet" id='name'  placeholder="Name" name="">
+                    <button onclick="myFunction()">Fill</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="text" style:"center;" id='email' placeholder="1234@gmail.com" name="">
+                    <button onclick="myFunction1()">Fill</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <input type="text"  id='address' placeholder="Address" name="">
+                    <button onclick="myFunction2()">Fill</button>
+                </td>
+    
+            </tr>
+            <tr>
+                <td>
+                    Telephone-no:
+                </td>
+                <td>
+                    <input type="number" id='telephone' placeholder="+918545....." name="">
+                    <button onclick="myFunction3()">Fill</button>
+                </td>
+    
+            </tr>
+            <tr>
+                <td>
+                    ZIP:
+                </td>
+                <td>
+                    <input type="number" id='zip' placeholder="6-digit number" name="">
+                    <button onclick="myFunction4()">Fill</button>
+                </td>
+    
+            </tr>
+            
+        </table>
+    </div>
+    <div class="button">
+        <input  style="color:red;" type="button" onclick="myFun()" value="Submit form">
+    </div>
+    <br>
+    <h1  style="color: green ;">Filled Data</h1>
+       
+    <div>
+      <table  style="width:1400px"  id="table" onclick="hi()">
+          <tr>
+          <th><bold>Name</bold></th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Telephone</th>
+          <th>Zip</th>
+
+
+
+      </table>
+
+    </div>
+    
+        <!-- </table> -->
+      
+             
+</body>
+</html>
