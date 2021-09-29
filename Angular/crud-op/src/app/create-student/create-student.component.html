@@ -1,30 +1,33 @@
 <!-- <form class="form-horizontal">
    <div class="panel panel-primary"> -->
-  <div class="panel-heading">
-   <h3 class="panel-title">Student Form</h3>
-  </div>
-   
-  
+<div class="panel-heading">
+  <h3 class="panel-title">Student Form</h3>
+</div>
 
-  <form [formGroup]="studentForm">  
 <form [formGroup]="studentForm" class="form-horizontsl" (ngSubmit)="onSubmit()">
   <div class="form-group">
     <label class="Sm-2" for="fullName">Full Name</label>
     <div class="col-8">
-      <input id="fullName"  formControlName="fullName" placeholder="Enter your name" type="text" class="form-control" />
+      <input
+        id="fullName"
+        formControlName="fullName"
+        placeholder="Enter your name"
+        type="text"
+        class="form-control"
+      />
       <span
-      style="color: red"
-      *ngIf="
-      studentForm.controls.fullName.touched &&
-      studentForm.controls.fullName.hasError('required')
-      "
-    >
-      Name is Required
-    </span>
+        style="color: red"
+        *ngIf="
+          studentForm.controls.fullName.touched &&
+          studentForm.controls.fullName.hasError('required')
+        "
+      >
+        Name is Required
+      </span>
     </div>
   </div>
   <div class="form-group">
-    <label class="Sm-2" for="email" >Email</label>
+    <label class="Sm-2" for="email">Email</label>
     <div class="col-8">
       <input
         id="email"
@@ -35,14 +38,14 @@
       />
     </div>
     <span
-    style="color: red"
-    *ngIf="
-     studentForm.controls.email.touched &&
-     studentForm.controls.email.hasError('abc@gmail.com required')
-     "
+      style="color: red"
+      *ngIf="
+        studentForm.controls.email.touched &&
+        studentForm.controls.email.hasError('required')
+      "
     >
-    Email is Required
-  </span>
+      Email is Required
+    </span>
   </div>
   <div class="form-group">
     <label class="Sm-2" for="address">Address</label>
@@ -54,25 +57,41 @@
         class="form-control"
       />
     </div>
+    <span
+      style="color: red"
+      *ngIf="
+        studentForm.controls.address.touched &&
+        studentForm.controls.address.hasError('required')
+      "
+    >
+      fill detail Address
+    </span>
   </div>
   <div class="form-group">
     <label>Gender</label>
     <div class="form-control">
-     <label class="radio-inline">
-       <input type="radio" value="male" name="gender"
-       formControlName="gender" >Male
-     </label>
-     <label class="radio-inline">
-      <input type="radio" value="Female" name="gender"
-      formControlName="gender">Female
-     </label>
+      <label class="radio-inline">
+        <input
+          type="radio"
+          value="male"
+          name="gender"
+          formControlName="gender"
+        />Male
+      </label>
+      <label class="radio-inline">
+        <input
+          type="radio"
+          value="Female"
+          name="gender"
+          formControlName="gender"
+        />Female
+      </label>
     </div>
-  </div> 
-     
+  </div>
 
   <div class="panel-footer">
     <button class="btn-primary" type="submit">Save</button>
     <button class="btn-primary" type="reset" (click)="reset()">Reset</button>
-    
+    <!-- <button class="btn btn-primary">updateStudentForm</button> -->
   </div>
 </form>

@@ -1,5 +1,25 @@
-.form-group{
-    background-color: aqua;
-    align-content: center;
-    
+.form-group {
+  background-color: aqua;
+  align-content: center;
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 120px;
+}
+.table {
+  text-align: left;
+  padding: 30px;
+}
+.table.col {
+  padding: 20px;
+}
+.btn btn-danger {
+  align-items: center;
+  padding: 10px;
+}
+.btn-primary {
+  text-align: right;
+}
+.radio-inline {
+  /* padding: px; */
+  margin-right: 10px;
 }

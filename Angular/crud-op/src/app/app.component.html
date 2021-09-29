@@ -1,1 +1,10 @@
-<app-create-student></app-create-student>
+<app-create-student
+  [item]="item"
+  (valueChange)="onValueChange($event)"
+></app-create-student>
+{{ item }}
+<app-table
+  [data]="data"
+  (valueChange)="onDelete($event)"
+  (itemChange)="onItemChange($event)"
+></app-table>

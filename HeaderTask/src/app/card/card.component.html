@@ -1,0 +1,123 @@
+<!-- <mat-card>
+  <mat-card-title>Actions Buttons</mat-card-title>
+  <mat-card-subtitle>End</mat-card-subtitle>
+  <mat-card-actions align="end">
+    <button mat-button>Like</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card> -->
+<div>
+  <mat-card class="bigbox">
+    <mat-card-content>
+      <div class="contentt">
+        <mat-card
+          style="height: 95px; width: 95px; margin: 15px; padding: 10px"
+        >
+          <!-- if(img==1){ -->
+          <div class="letter">
+            <img mat-card-image *ngIf="img" [src]="img" alt="Teacher" />
+            <p *ngIf="!img" style="max-height: 100%; max-width: 100%">
+              {{ name[0] }}
+            </p>
+          </div>
+        </mat-card>
+        <mat-card-header>
+          <mat-card-title class="nam">Girish Kumar</mat-card-title>
+          <mat-card-subtitle
+            ><strong>Class - XI / Science </strong>
+          </mat-card-subtitle>
+        </mat-card-header>
+        <div class="bot">
+          <mat-card-actions align="end">
+            <div class="bot1">
+              <button
+                mat-button
+                style="display: block; height: max-content; width: max-content"
+              >
+                <mat-icon> import_contacts</mat-icon>
+                overview
+              </button>
+            </div>
+            <div class="bot2">
+              <button
+                mat-button
+                style="display: block; height: max-content; width: max-content"
+              >
+                <mat-icon> list_alt</mat-icon> Team
+              </button>
+            </div>
+            <div class="bot3">
+              <button
+                mat-button
+                style="display: block; height: max-content; width: max-content"
+              >
+                <mat-icon>wb_incandescent</mat-icon> Project
+              </button>
+            </div>
+            <!-- Ungroup -->
+
+            <!-- <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          float: right;
+                          flex-wrap: nowrap wrap;
+                        "
+                      > -->
+            <!-- <mat-card><mat-icon> list_alt</mat-icon> Team</mat-card> -->
+            <!-- </div> -->
+            <!-- <mat-card><mat-icon>wb_incandescent</mat-icon> Project</mat-card> -->
+          </mat-card-actions>
+        </div>
+      </div>
+
+      <!-- <div style="display: flex; flex-direction: column; flex-wrap: wrap"> -->
+      <!-- <div style="display: flex; flex-direction: row; flex-wrap: wrap"> -->
+      <!-- <mat-card-actions align="end">
+        <button
+          mat-button
+          style="display: block; height: max-content; width: max-content"
+        >
+          <mat-icon> import_contacts</mat-icon>
+          overview
+        </button>
+        <button
+          mat-button
+          style="display: block; height: max-content; width: max-content"
+        >
+          <mat-icon> list_alt</mat-icon> Team
+        </button>
+        <button
+          mat-button
+          style="display: block; height: max-content; width: max-content"
+        >
+          <mat-icon>wb_incandescent</mat-icon> Project
+        </button>
+
+        <!-- Ungroup -->
+
+      <!-- <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  float: right;
+                  flex-wrap: nowrap wrap;
+                "
+              > -->
+      <!-- <mat-card><mat-icon> list_alt</mat-icon> Team</mat-card> -->
+      <!-- </div> -->
+      <!-- <mat-card><mat-icon>wb_incandescent</mat-icon> Project</mat-card> -->
+      <!-- </mat-card-actions>  -->
+      <!-- </div> -->
+
+      <!-- </div> -->
+      <!-- <div class="card">
+            <img src="https://cdn4.vectorstock.com/i/1000x1000/35/68/person-icon-male-user-profile-avatar-vector-18833568.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+            </div>
+          </div> -->
+    </mat-card-content>
+  </mat-card>
+</div>
