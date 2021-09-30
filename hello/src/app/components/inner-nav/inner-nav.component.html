@@ -1,0 +1,10 @@
+<div *ngFor="let folder of arry">
+  <!-- <mat-icon mat-list-icon>{{ folder.image }}</mat-icon> -->
+  <img
+    [src]="folder.image"
+    style="height: 70px; width: 70px; border-radius: 50%"
+    (click)="onSelectedChat(folder)"
+  />
+  <div mat-line></div>
+  <!-- <div mat-line>{{ folder.chat }}</div> -->
+</div>

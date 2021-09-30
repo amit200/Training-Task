@@ -1,0 +1,41 @@
+.sender {
+  margin: 5px;
+  padding: 3px;
+  //   border: 1px solid red;
+  border-radius: 8px;
+  float: right;
+  background: gainsboro;
+  cursor: pointer;
+}
+
+.r {
+  margin: 15px;
+  padding: 5px;
+  /* border-style: solid; */
+  //   border: 2px solid red;
+  border-radius: 5px;
+  background: darkseagreen;
+}
+// input {
+//   position: absolute;
+//   bottom: 10px;
+//   float: right;
+// }
+#review {
+  position: absolute;
+  bottom: 30px;
+  border-radius: 10px;
+  height: 25px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 1ch;
+  margin: 2px;
+  display: flex;
+}
+.last {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  float: right;
+  border-radius: 234px;
+}

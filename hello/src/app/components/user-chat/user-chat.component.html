@@ -1,0 +1,55 @@
+<div class="chat" *ngFor="let chat of this.userInfo.chat">
+  <div class="sender">{{ chat.mymessage }}</div>
+  <br />
+  <div class="r" style="margin-top: 25px">
+    {{ chat.ssendermessage }}
+  </div>
+</div>
+<!-- <textarea
+  text
+  id="review"
+  name="w3review"
+  placeholder="type your text here"
+  rows="4"
+  cols="50"
+>
+    type your text here
+    </textarea
+> -->
+<img [src]="this.image" alt="" height="50px" width="50px" />
+<div class="last">
+  <!-- <textarea matInput placeholder="Type your text here..."></textarea
+  ><mat-icon matSuffix style="border-radius: 50%">send</mat-icon>.
+  <input style="display: none" type="file" class="file-upload" /> -->
+  <input
+    class="ng-hide"
+    style="display: none"
+    id="input-file-id"
+    multiple
+    #input
+    type="file"
+    (change)="filechange($event)"
+  />
+  <button
+    style="margin: 0px 10px 0px 10px"
+    for="input-file-id"
+    (click)="input.click()"
+    style="margin: 2px"
+    class="md-button md-raised md-primary"
+  >
+    <mat-icon>attachment</mat-icon>
+  </button>
+
+  <input
+    type="text"
+    matInput
+    placeholder="Type your text here..."
+    style="margin: 2px"
+  />
+
+  <mat-icon style="margin: 7px" matSuffix>send</mat-icon>
+
+  <!-- <label for="input-file-id" class="md-button md-raised md-primary"
+    >Choose Files</label
+  > -->
+</div>

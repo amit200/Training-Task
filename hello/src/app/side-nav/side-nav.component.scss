@@ -1,0 +1,42 @@
+.example-container {
+  // width: 40px;
+  float: right;
+  height: 100%;
+  background-color: transparent;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 8px;
+  float: right;
+  border: 0.5px solid #eee;
+  // width: 100px;
+}
+.example-sidenav-content {
+  display: flex;
+  justify-content: flex-end;
+}
+.mat-drawer-content {
+  width: 300px;
+  border: 0.5px solid #eee;
+  background-color: #d4f4ec;
+}
+.A {
+  width: 387px;
+  border: 1px solid #e3dada;
+  height: 80px;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+}
+mat-icon {
+  float: right;
+  cursor: pointer;
+}
+.display {
+  display: none;
+}
