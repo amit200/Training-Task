@@ -9,13 +9,16 @@ import { FormGroup } from '@angular/forms';
 export class AppComponent {
   title = 'crud-op';
   data: any = [];
-  index: any;
+  index: number = 0;
   item: any;
+  isUpdate: boolean = false;
   onValueChange(value: any) {
-    if (!this.index) {
+    console.log(this.index);
+    if (!this.isUpdate) {
       this.data.push(value);
     } else {
       this.data[this.index] = value;
+      this.isUpdate = false;
     }
   }
   onDelete(value: any) {
@@ -27,7 +30,8 @@ export class AppComponent {
 
   // }
   onItemChange(item: any) {
-    this.index = item.index;
+    this.index = Number(item.index);
     this.item = item.item;
+    this.isUpdate = true;
   }
 }
